@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌿 PlantGuard AI</h1>
+        <p class="subtitle">
+            AI Powered Plant Disease Detection for Farmers
+        </p>
+
+        <div class="upload-card">
+
+            <div class="upload-options">
+
+                <label class="upload-btn">
+                    📷 Take Photo
+                    <input
+                        type="file"
+                        id="cameraInput"
+                        accept="image/*"
+                        capture="environment"
+                        hidden>
+                </label>
+
+                <label class="upload-btn">
+                    🖼️ Upload Photo
+                    <input
+                        type="file"
+                        id="galleryInput"
+                        accept="image/*"
+                        hidden>
+                </label>
+
+            </div>
+
+            <img
+                id="preview"
+                src=""
+                alt="Leaf Preview">
+
+            <button
+                id="analyzeBtn"
+                onclick="analyzeImage()">
+                🔍 Analyze Disease
+            </button>
+
+        </div>
+
+        <div id="loader" class="loader hidden">
+
+            <div class="spinner"></div>
+
+            <h2>🌱 AI is analyzing your plant...</h2>
+
+            <p>Please wait a few seconds</p>
+
+        </div>
+
+        <div id="result" class="result hidden">
+
+            <div class="card">
+                <h2>🦠 Disease</h2>
+                <p id="disease"></p>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Confidence</h2>
+                <p id="confidence"></p>
+
+                <div class="progress">
+                    <div id="progressBar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📋 Symptoms</h2>
+                <p id="symptoms"></p>
+            </div>
+
+            <div class="card">
+                <h2>💊 Treatment</h2>
+                <p id="treatment"></p>
+            </div>
+
+            <div class="card">
+                <h2>🛡 Prevention</h2>
+                <p id="prevention"></p>
+            </div>
+
+            <button onclick="speakAgain()">
+                🔊 Hear Result
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
