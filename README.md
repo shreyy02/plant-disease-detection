@@ -230,6 +230,24 @@ Maintain humidity and inspect plants regularly.
 - ☁ Cloud Deployment
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home Page](./screenshots/home.png)
+
+---
+
+### 📤 Upload Screen
+
+![Upload Screen](./screenshots/upload.png)
+
+---
+
+### 🦠 Disease Detection Result
+
+![Detection Result](./screenshots/result.png)
+
 
 ## 👩‍💻 Author
 
